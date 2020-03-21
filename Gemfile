@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -26,6 +27,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # gem 'rack-cors'
 
 group :development, :test do
+  gem 'rubocop'
+  gem 'rubocop-rails'
+  gem 'rubocop-performance'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
