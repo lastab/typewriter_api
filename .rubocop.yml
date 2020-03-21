@@ -10,3 +10,6 @@ AllCops:
   Performance:
     Exclude:
       - '**/spec/**/*'
+
+Metrics/LineLength:
+  Max: 120
