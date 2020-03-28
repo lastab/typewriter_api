@@ -20,7 +20,7 @@ jobs:
         environment:
           POSTGRES_USER: pgbnc
           POSTGRES_DB: type_writer_api-test
-          POSTGRES_PASSWORD: ""
+          POSTGRES_PASSWORD: "type_writer_api"
 
     working_directory: ~/repo
 
@@ -48,7 +48,7 @@ jobs:
       - run:
           name: Generate rubocop report
           command: |
-            bundle exec rubocop app config spec --extra-details --rails
+            bundle exec rubocop app config spec --extra-details --format html
 
       # Database setup
       - run: bundle exec rake db:create
