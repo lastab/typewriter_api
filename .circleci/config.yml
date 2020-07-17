@@ -20,7 +20,7 @@ jobs:
         environment:
           POSTGRES_USER: pgbnc
           POSTGRES_DB: type_writer_api-test
-          POSTGRES_PASSWORD: "type_writer_api"
+          POSTGRES_HOST_AUTH_METHOD: "trust"
 
     working_directory: ~/repo
 
